@@ -294,30 +294,40 @@ namespace TeacherComputerRetrieval_NewGlobe
             }
         }
 
-        protected void Result_TextChanged(object sender, EventArgs e)
+        protected void Result1_TextChanged(object sender, EventArgs e)
         {
             if (GetRoutes.Text == "")
             {
                 GetResult.Visible = false;
-            }
+           }
+        }
+        
+        protected void Result2_TextChanged(object sender, EventArgs e)
+        {
             if (GetAcademies.Text == "")
             {
                 maxStops.Text = "";
                 GetTotalRoutes.Visible = false;
             }
+        }
+        
+        protected void Result3_TextChanged(object sender, EventArgs e)
+        {
             if (GetStartEndAcademy.Text == "")
             {
                 GetShortestRouteDistance.Visible = false;
             }
+        }
+        
+        protected void Result4_TextChanged(object sender, EventArgs e)
+        {
             if (GetAcademyDetails.Text == "")
             {
                 inputMaxDistance.Text = "";
                 GetTotalRoutesBasedOnDistance.Visible = false;
             }
-
         }
-
-
+        
     }
 
     public class newDict
