@@ -56,7 +56,7 @@
             <div id="firstDiv">
                 <label for="routesToGetDistance" style="text-transform: uppercase;"><strong>Measure distance</strong></label>
                 <br /><br />
-                Enter Routes: <asp:TextBox ID="GetRoutes" runat="server"  onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true" OnTextChanged="Result_TextChanged"></asp:TextBox> <%--OnTextChanged="GetRoutes_TextChanged"--%>
+                Enter Routes: <asp:TextBox ID="GetRoutes" runat="server"  onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true" OnTextChanged="Result1_TextChanged"></asp:TextBox> <%--OnTextChanged="GetRoutes_TextChanged"--%>
                 <br /><br />
                 <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
                 <br /><br />
@@ -72,7 +72,7 @@
                 <label for="forDiffRoutes" style="text-transform: uppercase;"><strong>Get Different routes</strong></label>
                 <br /><br />
 
-                Enter Academy: <asp:TextBox ID="GetAcademies" runat="server" MaxLength="2" onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true"  OnTextChanged="Result_TextChanged"></asp:TextBox> <%--OnTextChanged="GetAcademies_TextChanged"--%>
+                Enter Academy: <asp:TextBox ID="GetAcademies" runat="server" MaxLength="2" onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true"  OnTextChanged="Result2_TextChanged"></asp:TextBox> <%--OnTextChanged="GetAcademies_TextChanged"--%>
                 <br /><br />
 
                 Enter Max Stops: <asp:TextBox ID="maxStops" runat="server" AutoPostBack = "true"></asp:TextBox>
@@ -90,7 +90,7 @@
             <div id="thirdDiv">
                 <label for="forShortestRoutes"style="text-transform: uppercase;"><strong>Get shortest route(in terms of distance) </strong></label>
                 <br /><br />
-                Enter Academy: <asp:TextBox ID="GetStartEndAcademy" runat="server" MaxLength="2" onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true" OnTextChanged="Result_TextChanged"></asp:TextBox>
+                Enter Academy: <asp:TextBox ID="GetStartEndAcademy" runat="server" MaxLength="2" onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true" OnTextChanged="Result3_TextChanged"></asp:TextBox>
                 <br /><br />
                 <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Submit" />
                 <br /><br />
@@ -105,7 +105,7 @@
                 <label for="forRoutes"style="text-transform: uppercase;"><strong>Get different routes based on distance </strong></label>
                 <br /><br />
                 Enter Academy: 
-                <asp:TextBox ID="GetAcademyDetails" runat="server" MaxLength="2" onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true" OnTextChanged="Result_TextChanged"></asp:TextBox>
+                <asp:TextBox ID="GetAcademyDetails" runat="server" MaxLength="2" onkeydown="return /[a-e]/i.test(event.key)" AutoPostBack = "true" OnTextChanged="Result4_TextChanged"></asp:TextBox>
                 <br /><br />
 
                 <label for="maxDistance">distance < </label>
